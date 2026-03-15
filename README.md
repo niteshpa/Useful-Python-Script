@@ -1,5 +1,4 @@
-# Useful-Python-Script
-ASG Parser
+# ASG Parser
 RITM ASG Parser
 Parses a ServiceNow RITM description (plain text) and extracts valid IP addresses, IP ranges, and CIDRs into a JSON array that can be directly added to an existing Application Security Group (ASG) file in GitHub.
 ---
