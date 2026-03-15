@@ -19,19 +19,19 @@ A JSON array of ASG rule objects with placeholders for fields you need to fill i
 ```json
 [
   {
-    "protocol": "<tcp/udp/all>",
+    "protocol": "<tcp>",
     "destination": "10.20.30.45-10.20.30.48",
     "ports": "<PORT>",
     "description": "<DESCRIPTION>"
   },
   {
-    "protocol": "<tcp/udp/all>",
+    "protocol": "<tcp>",
     "destination": "10.99.0.0/24",
     "ports": "<PORT>",
     "description": "<DESCRIPTION>"
   },
   {
-    "protocol": "<tcp/udp/all>",
+    "protocol": "<tcp>",
     "destination": "10.20.31.10",
     "ports": "<PORT>",
     "description": "<DESCRIPTION>"
@@ -82,10 +82,10 @@ Ref: RITM0098231
 Output:
 ```json
 [
-  { "protocol": "<tcp/udp/all>", "destination": "10.20.30.45-10.20.30.48", "ports": "<PORT>", "description": "<DESCRIPTION>" },
-  { "protocol": "<tcp/udp/all>", "destination": "10.20.30.50-10.20.30.53", "ports": "<PORT>", "description": "<DESCRIPTION>" },
-  { "protocol": "<tcp/udp/all>", "destination": "10.99.0.0/24",            "ports": "<PORT>", "description": "<DESCRIPTION>" },
-  { "protocol": "<tcp/udp/all>", "destination": "172.16.5.10-172.16.5.20", "ports": "<PORT>", "description": "<DESCRIPTION>" },
-  { "protocol": "<tcp/udp/all>", "destination": "10.20.31.10",             "ports": "<PORT>", "description": "<DESCRIPTION>" }
+  { "protocol": "<tcp>", "destination": "10.20.30.45-10.20.30.48", "ports": "<PORT>", "description": "<DESCRIPTION>" },
+  { "protocol": "<tcp>", "destination": "10.20.30.50-10.20.30.53", "ports": "<PORT>", "description": "<DESCRIPTION>" },
+  { "protocol": "<tcp>", "destination": "10.99.0.0/24",            "ports": "<PORT>", "description": "<DESCRIPTION>" },
+  { "protocol": "<tcp>", "destination": "172.16.5.10-172.16.5.20", "ports": "<PORT>", "description": "<DESCRIPTION>" },
+  { "protocol": "<tcp>", "destination": "10.20.31.10",             "ports": "<PORT>", "description": "<DESCRIPTION>" }
 ]
 ```
