@@ -67,7 +67,7 @@ def consolidate(ips):
 
 
 def asg_rule(dest):
-    return {"protocol": "<tcp/udp/all>", "destination": dest, "ports": "<PORT>", "description": "<DESCRIPTION>"}
+    return {"protocol": "<tcp>", "destination": dest, "ports": "<PORT>", "description": "<DESCRIPTION>"}
 
 
 def main():
