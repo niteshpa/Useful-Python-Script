@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 # Usage: python3 parse_ritm_asg.py <input_file> [output_file]
 import re, sys, json, ipaddress
+from collections import OrderedDict
 from pathlib import Path
 
 # ---------------------------------------------------------------------------
@@ -84,7 +85,12 @@ def consolidate(ips):
     return groups + [(s, e)]
 
 def asg_rule(dest):
-    return {"protocol": "<tcp>", "destination": dest, "ports": "<PORT>", "description": "<DESCRIPTION>"}
+    return OrderedDict([
+        ("protocol",    "tcp"),
+        ("destination", dest),
+        ("ports",       "<PORT>"),
+        ("description", "<DESCRIPTION>"),
+    ])
 
 # ---------------------------------------------------------------------------
 # Main
